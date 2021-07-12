@@ -18,7 +18,7 @@ function makeMatrix(){
     
 }
 
-document.getElementsByClassName("Button").onclick=function(){
+/*document.getElementsByClassName("Button").onclick=function(){
     var x=document.getElementsByClassName("Button");
     if(x.style.display==="none"){
         x.style.display="block";
@@ -27,7 +27,7 @@ document.getElementsByClassName("Button").onclick=function(){
             x.style.display="none";
         }
     
-}
+}*/
 
 function changeColor(){
     
