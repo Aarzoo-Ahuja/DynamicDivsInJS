@@ -2,7 +2,7 @@ function makeMatrix(){
   
     var r=document.getElementById('row').value;
     var c=document.getElementById('col').value;
-
+    
     for(let i=0;i<r;i++)
     {
         let rowDiv=document.createElement('div');
@@ -15,10 +15,22 @@ function makeMatrix(){
         }
         document.body.appendChild(rowDiv);
     }
-    return false;
+    
+}
+
+document.getElementsByClassName("Button").onclick=function(){
+    var x=document.getElementsByClassName("Button");
+    if(x.style.display==="none"){
+        x.style.display="block";
+    }
+        else{
+            x.style.display="none";
+        }
+    
 }
 
 function changeColor(){
+    
     let r=document.getElementById('row2').value;
    console.log(r);
     let c=document.getElementById('col2').value;
