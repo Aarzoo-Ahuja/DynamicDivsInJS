@@ -23,22 +23,23 @@ function changeColor(){
     var c=document.getElementById('col').value;
     var color=document.getElementById('color').value;
     var access=document.getElementsByClassName("rw")[r-1].children.item(c-1);
-    document.write(access);
+    console.log(access);
     access.style.backgroundColor=color;
 }
 
-function insertDivision(){
-    document.write("abdc");
+document.getElementById("insertButton").addEventListener('click',function(){
+   // document.write("abdc");
     /*div2=document.createElement('div');
     div2.className="insertDivChild";
     div2.innerHTML="THIS IS DIV 2";*/
-
-    var fisrtDiv=document.getElementById("div1");
-    firstDiv.insertAdjacentHTML('afterend','<div className="insertDivChild">"THIS IS DIV 2"</div>');
     
-    /*let button = document.getElementById("insertButton");
-    button.parentNode.removeChild(button);*/
-}
+    var firstDiv=document.getElementById("div1");
+    console.log(firstDiv);
+    firstDiv.insertAdjacentHTML('afterend','<div class="insertDivChild">THIS IS DIV 2</div>');
+    
+    let button = document.getElementById("insertButton");
+    button.parentNode.removeChild(button);
+});
 
    
     
