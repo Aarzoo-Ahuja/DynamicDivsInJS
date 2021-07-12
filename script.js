@@ -19,11 +19,11 @@ function makeMatrix(){
 }
 
 function changeColor(){
-    var r=document.getElementById('row').value;
-    var c=document.getElementById('col').value;
+    let r=document.getElementById('row2').value;
+   console.log(r);
+    let c=document.getElementById('col2').value;
     var color=document.getElementById('color').value;
     var access=document.getElementsByClassName("rw")[r-1].children.item(c-1);
-    console.log(access);
     access.style.backgroundColor=color;
 }
 
